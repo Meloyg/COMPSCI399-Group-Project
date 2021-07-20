@@ -88,11 +88,6 @@ $ npm run build // this will build the server code to es5 js codes and generate 
 | redux: ^3.7.2                 | morgan: ^1.7.0        |
 | redux-thunk: ^2.1.0           |
 
-## BUGs or comments
-
-[Create new Issues](https://github.com/amazingandyyy/mern/issues) (preferred)
-
-Email Me: amazingandyyy@gmail.com (welcome, say hi)
 
 ## Contributor
 

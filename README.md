@@ -1,11 +1,11 @@
 <h1 align="center">
-🌐 COMPSCI 399 MERN Stack
+🌐 COMPSCI 399 MERN Project
 </h1>
 <p align="center">
 MongoDB, Expressjs, React/Redux, Nodejs
 </p>
 
-<p align="center">
+<!-- <p align="center">
    <a href="https://travis-ci.com/amazingandyyy/mern">
       <img src="https://travis-ci.com/amazingandyyy/mern.svg?branch=master" />
    </a>
@@ -15,7 +15,7 @@ MongoDB, Expressjs, React/Redux, Nodejs
    <a href="https://circleci.com/gh/amazingandyyy/mern">
       <img src="https://circleci.com/gh/amazingandyyy/mern.svg?style=svg" />
    </a>
-</p>
+</p> -->
 
 > MERN is a fullstack implementation in MongoDB, Expressjs, React/Redux, Nodejs.
 
@@ -28,15 +28,15 @@ $ git clone https://github.com/ygua699/COMPSCI399-Group-Project.git
 $ npm install
 ```
 
-## project structure
+## Project structure
 
 ```terminal
 LICENSE
 package.json
-server/
+backend/
    package.json
    .env (to create .env, check [prepare your secret session])
-client/
+frontend/
    package.json
 ...
 ```
@@ -63,7 +63,7 @@ $ npm run build // this will compile the react code using webpack and generate a
 $ npm run start // this will run the files in docs, this behavior is exactly the same how gh-pages will run your static site
 ```
 
-## Server-side(Backend) usage(PORT: 8000)
+## Server-side(Backend) usage(PORT: 5000)
 
 ### Start
 
@@ -72,28 +72,6 @@ $ cd backend   // go to server folder
 $ npm i       // npm install pacakges
 $ npm run server // run it locally
 $ npm run build // this will build the server code to es5 js codes and generate a dist file
-```
-
-## Deploy Server to [Heroku](https://dashboard.heroku.com/)
-
-```terminal
-$ npm i -g heroku
-$ heroku login
-...
-$ heroku create
-$ npm run heroku:add <your-super-amazing-heroku-app>
-// remember to run this command in the root level, not the server level, so if you follow the documentation along, you may need to do `cd ..`
-$ pwd
-/Users/<your-name>/mern
-$ npm run deploy:heroku
-```
-
-### After creating heroku
-
-remember to update the file of [client/webpack.prod.js](https://github.com/amazingandyyy/mern/blob/master/client/webpack.prod.js)
-
-```javascript
- 'API_URI': JSON.stringify('https://your-super-amazing-heroku-app.herokuapp.com')
 ```
 
 # Dependencies(tech-stacks)
@@ -110,31 +88,13 @@ remember to update the file of [client/webpack.prod.js](https://github.com/amazi
 | redux: ^3.7.2                 | morgan: ^1.7.0        |
 | redux-thunk: ^2.1.0           |
 
-# Screenshots of this project
-
-User visit public and Home page
-![User visit public and Home page](http://i.imgur.com/ORCGHHY.png)
-
-User can sign in or sign up
-![User can sign in or sign up](http://i.imgur.com/rrmbU5I.png)
-
-After signing in user can go to account route and make request to token-protected API endpoint
-![After signing in user can go to account route](http://i.imgur.com/FzLB51u.png)
-
-## Standard
-
-[![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
-
 ## BUGs or comments
 
 [Create new Issues](https://github.com/amazingandyyy/mern/issues) (preferred)
 
 Email Me: amazingandyyy@gmail.com (welcome, say hi)
 
-## Author
+## Contributor
 
-[Amazingandyyy](https://amazingandyyy.com)
+[Melo Guan](https://meloguan.info)
 
-### License
-
-[MIT](https://github.com/amazingandyyy/mern/blob/master/LICENSE)
